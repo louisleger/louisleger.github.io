@@ -195,7 +195,6 @@ img {
 
   font-weight: 400;
   font-size: 28px;
-  letter-spacing: 1px;
 }
 
 .site-description {
@@ -208,29 +207,80 @@ img {
   }
 }
 
+/*nav {
+  margin: 25px;
+  background: #f9f9f9;
+  padding: 16px;
+  .menuItems {
+    list-style: none;
+    display: flex;
+
+    li {
+      margin: 50px;
+
+      a {
+        text-decoration: none;
+        color: #8f8f8f;
+        font-size: 24px;
+        font-weight: 400;
+        transition: all 0.5s ease-in-out;
+        position: relative;
+        text-transform: uppercase;
+
+        &::before {
+          content: attr(data-item);
+          transition: 0.5s;
+          color: #8254ff;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          width: 0;
+          overflow: hidden;
+        }
+
+        &:hover {
+          &::before {
+            width: 100%;
+            transition: all 0.5s ease-in-out;
+          }
+        }
+      }
+    }
+  }
+}*/
+
 nav {
-  float: right;
   margin-top: 23px; // @TODO: Vertically middle align
   font-family: $helveticaNeue;
   font-size: 18px;
 
-  @include mobile {
-    float: none;
-    margin-top: 9px;
-    display: block;
-    font-size: 16px;
-  }
-
   a {
     margin-left: 20px;
     color: $darkGray;
-    text-align: right;
+    text-align: center;
     font-weight: 300;
     letter-spacing: 1px;
 
-    @include mobile {
-      margin: 0 10px;
-      color: $blue;
+    &::before {
+      content: attr(data-item);
+      transition: 0.5s;
+      color: #275f7b;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 0;
+      overflow: hidden;
+    }
+
+    &:hover {
+      &::before {
+        width: 100%;
+        transition: all 0.5s ease-in-out;
+      }
     }
   }
 }
