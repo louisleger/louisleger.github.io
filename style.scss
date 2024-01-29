@@ -187,7 +187,7 @@ img {
   font-family: $title;
 
   font-weight: 400;
-  font-size: 28px;
+  font-size: 30px;
 }
 
 .site-description {
@@ -202,14 +202,14 @@ img {
 }
 
 nav {
-  margin-top: 23px; // @TODO: Vertically middle align
+  margin-top: 15px; // @TODO: Vertically middle align
   text-align: center;
   font-family: $helvetica;
   font-size: 18px;
 
   a {
-    margin-left: 5px;
-    margin-right: 5px; 
+    margin-left: 25px;
+    margin-right: 25px; 
     color: $ultraViolet;
     text-align: center;
     font-weight: 400;
