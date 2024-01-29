@@ -2,7 +2,9 @@
 //
 // VARIABLES
 //
-@import url('https://fonts.googleapis.com/css?family=DM+Serif+Display|Raleway|Futura|IBM+Plex+Serif');
+//@import url('https://fonts.googleapis.com/css?family=DM+Serif+Display|Raleway|Futura|IBM+Plex+Serif');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@300;400;800&display=swap');
+
 
 // Colors
 $blue: #4183C4;
@@ -25,7 +27,9 @@ $celadon: #B6EEA6;
 $helvetica: Helvetica, Arial, sans-serif;
 $helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $georgia: Georgia, serif;
-$title: 'DM Serif Display', serif;
+$title: 'Noto+Serif:wght@800', serif;
+$subtitle: 'Noto+Serif:wght@300', serif;
+$normalFont: 'Noto+Serif:wght@400', serif;
 
 
 // Mobile breakpoints
