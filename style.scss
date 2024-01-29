@@ -67,14 +67,14 @@ p {
   margin: 15px 0;
 }
 
-a {
+/*a {
   color: $blue;
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
     color: $blue;
   }
-}
+}*/
 
 ul, ol {
   margin: 15px 0;
@@ -267,7 +267,7 @@ nav {
       content: attr(data-item);
       transition: 0.5s;
       color: #275f7b;
-      position: absolute;
+      position: relative;
       top: 0;
       bottom: 0;
       left: 0;
