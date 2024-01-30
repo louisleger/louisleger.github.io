@@ -254,5 +254,15 @@ nav {
   font-size: 0.9em;
 }
 
+.button .info {
+  margin-left: auto;
+  text-align: right;
+}
+
+.button .info .context {
+  font-style: italic;
+  font-size: 0.8em;
+}
+
 @import "highlights";
 @import "svg-icons";
