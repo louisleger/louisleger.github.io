@@ -12,9 +12,9 @@ description: Neuroscience & Machine Learning
 avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
 
 #profile picture
-profile_picture: images/family.jpg
+profile_picture: /images/family.jpg
 
-nssp_thumbnail: images/fmri.png
+nssp_thumbnail: /images/fmri.png
 
 
 
