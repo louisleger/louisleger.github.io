@@ -232,6 +232,7 @@ nav {
 }
 
 .button:hover {
+  margin-bottom: 7px;
   border-width: 4px;
   background-color: rgba(182, 238, 166, .25);
 }
@@ -249,6 +250,7 @@ nav {
 
 .button .title {
   font-family: $title;
+  font-weight: bold;
   font-size: 1.2em;
 }
 
