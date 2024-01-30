@@ -72,9 +72,9 @@ a {
   color: $blue;
   text-decoration: none;
 	cursor: pointer;
-  &:hover, &:active {
+  /*&:hover, &:active {
     color: $ultraViolet;
-  }
+  }*/
 }
 
 ul, ol {
@@ -222,8 +222,9 @@ nav {
   display: flex;
   align-items: center;
   padding: 10px;
-  border: 2px solid transparent;
+  border: 1px solid transparent;
   text-decoration: none;
+  border-color: $night;
   color: black;
   margin-bottom: 10px; /* Spacing between buttons */
   background-color: #f0f0f0;
@@ -231,12 +232,13 @@ nav {
 }
 
 .button:hover {
-  border-color: blue;
+  border-width: 4px;
+  background-color: rgb(182, 238, 166, .25);
 }
 
 .button img {
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
   margin-right: 15px;
 }
 
@@ -246,11 +248,12 @@ nav {
 }
 
 .button .title {
-  font-weight: bold;
+  font-family: $title;
   font-size: 1.2em;
 }
 
 .button .description {
+  font-family: $subtitle;
   font-size: 0.9em;
 }
 
