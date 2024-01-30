@@ -45,6 +45,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 30px;
+  font-weight: 800; 
   a {
     color: inherit;
   }
@@ -166,7 +167,7 @@ img {
   width: 100%;
 	
   img {
-    max-width: 90%;
+    max-width: 50%;
     //border-radius: 2000px;
     margin-top: 10px;
     margin-left: auto;
@@ -174,23 +175,13 @@ img {
   }
 }
 
-.site-name {
-  text-align: center;
-  margin: 0;
-  cursor: pointer;
-  color: $night;
-  font-family: $title;
-
-  font-weight: 1000;
-  font-size: 30px;
-}
 
 .site-description {
   text-align: center;
   margin: 0;
   color: $gray;
   font-size: 18px;
-
+  
   @include mobile {
     margin: 3px 0;
   }
@@ -201,7 +192,7 @@ nav {
   text-align: center;
   font-family: $normalFont;
   font-size: 18px;
-
+  
   a {
     margin-left: 50px;
     margin-right: 50px; 
@@ -209,11 +200,22 @@ nav {
     text-align: center;
     font-weight: 400;
     letter-spacing: 1px;
-
+    
     &:hover, &:active {
       color: $columbiaBlue;
     }
   }
+}
+
+.site-name {
+  text-align: center;
+  margin: 0;
+  cursor: pointer;
+  color: $night;
+  font-family: $title;
+
+  font-weight: 800;
+  font-size: 30px;
 }
 
 // BUTTON for projects time
@@ -281,6 +283,7 @@ nav {
 
 .contact-section h2 {
   color: #333;
+  margin-top: 25px; 
 }
 
 .contact-section p {
