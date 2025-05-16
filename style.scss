@@ -144,21 +144,21 @@ img {
 
 .site-name {
   text-align: center;
-  margin: 0 0 0.5rem;        // small gap to subtitle
+  margin: 0 0 2px;        // small gap to subtitle
   cursor: pointer;
   color: $night;
   font-family: $title;
   font-weight: 800;
-  font-size: 3.5rem;         // make name bigger
+  font-size: 34px;         // make name bigger
 }
 
 .site-description {
   text-align: center;
-  margin: 0 0 3rem;          // more space between subtitle & nav
+  margin: 0 0 6px;          // more space between subtitle & nav
   color: $gray;
   font-family: $title;
   font-weight: 300;
-  font-size: 2rem;           // make subtitle bigger
+  font-size: 24px;           // make subtitle bigger
   
   @include mobile {
     margin: 0 0 2rem;
