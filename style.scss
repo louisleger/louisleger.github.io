@@ -187,24 +187,32 @@ img {
 }
 
 nav {
-  margin-top: 15px; // @TODO: Vertically middle align
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+
   text-align: center;
   font-family: $normalFont;
   font-size: 18px;
-  
+
   a {
-    margin-left: 50px;
-    margin-right: 50px; 
+    text-decoration: none;
+    cursor: pointer;
     color: $ultraViolet;
     text-align: center;
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: 1px;
-    
-    &:hover, &:active {
+    transition: color 0.2s ease-in-out;
+
+    &:hover,
+    &:active {
       color: $columbiaBlue;
     }
   }
 }
+
 
 .site-name {
   text-align: center;
