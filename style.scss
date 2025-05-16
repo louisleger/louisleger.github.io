@@ -44,7 +44,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 5rem;    // ↑ name bigger
+  font-size: 30px;    // ↑ name bigger
   font-weight: 800; 
   a {
     color: inherit;
@@ -52,21 +52,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;      // ↑ subtitle bigger
-}
-
-/* ========== header spacing ========== */
-header.masthead {
-  margin-bottom: 3rem;           // space between subtitle & nav
-
-  .site-name {
-    margin-bottom: 0.5rem;       // gap to description
-  }
-
-  .site-description {
-    font-weight: 300;
-    color: darken($columbiaBlue, 10%);
-  }
+  font-size: 24px;      // ↑ subtitle bigger
 }
 
 h3 {
@@ -156,60 +142,71 @@ img {
   }
 }
 
+.site-name {
+  text-align: center;
+  margin: 0 0 0.5rem;        // small gap to subtitle
+  cursor: pointer;
+  color: $night;
+  font-family: $title;
+  font-weight: 800;
+  font-size: 3.5rem;         // make name bigger
+}
 
 .site-description {
   text-align: center;
-  margin: 0;
+  margin: 0 0 3rem;          // more space between subtitle & nav
   color: $gray;
-  font-size: 18px;
+  font-family: $title;
+  font-weight: 300;
+  font-size: 2rem;           // make subtitle bigger
   
   @include mobile {
-    margin: 3px 0;
+    margin: 0 0 2rem;
+    font-size: 1.5rem;
   }
 }
 
 nav {
   display: flex;
   justify-content: center;
-  gap: 2rem;                        // equal spacing
-  background: rgba($ultraViolet, 0.1);
+  gap: 2rem;
   padding: 1rem 0;
-  border-radius: 1rem;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-
+  background: transparent;      // no pill background
+  box-shadow: none;
+  
   a {
-    display: inline-block;
-    padding: 0.75rem 1.5rem;
+    position: relative;
     font-family: $normalFont;
     font-size: 1rem;
     font-weight: 500;
     color: $ultraViolet;
     text-decoration: none;
-    border-radius: 0.5rem;
-    transition: 
-      background 0.25s ease, 
-      color 0.25s ease,
-      transform 0.15s ease;
+    padding: 0.5rem 0;
+
+    // sliding underline
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 0;
+      height: 2px;
+      background: $columbiaBlue;
+      transition: width 0.3s ease, left 0.3s ease;
+    }
 
     &:hover,
     &.active {
-      background: $ultraViolet;
-      color: #ffffff;
-      transform: translateY(-2px);
+      color: $columbiaBlue;
+
+      &::after {
+        width: 100%;
+        left: 0;
+      }
     }
   }
 }
 
-.site-name {
-  text-align: center;
-  margin: 0;
-  cursor: pointer;
-  color: $night;
-  font-family: $title;
-
-  font-weight: 800;
-  font-size: 30px;
-}
 
 // BUTTON for projects time
 
