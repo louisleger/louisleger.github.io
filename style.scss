@@ -16,52 +16,14 @@
 html {
   font-size: 100%;
   background-color: $white2;
-}
-
-body {
-	background: $white2;
-  font: 16px $normalFont;
-  color: $darkGray;
-}
-
-.container {
   margin: 0 auto;
   max-width: 800px;
-  width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $title;
   color: $night;
-
   line-height: 1.7;
-  margin: 1em 0 15px;
-  padding: 0;
-
-  @include mobile {
-    line-height: 1.4;
-  }
-}
-
-h1 {
-  font-size: 30px;    // ↑ name bigger
-  font-weight: 800; 
-  a {
-    color: inherit;
-  }
-}
-
-h2 {
-  font-size: 24px;      // ↑ subtitle bigger
-}
-
-h3 {
-  font-size: 20px;
-}
-
-h4 {
-  font-size: 18px;
-  color: $gray;
 }
 
 p {
@@ -69,55 +31,9 @@ p {
   font-family: $normalFont;
 }
 
-a {
-  color: $blue;
-  //text-decoration: none;
-	cursor: pointer;
-  /*&:hover, &:active {
-    color: $ultraViolet;
-  }*/
-}
-
-ul, ol {
-  margin: 15px 0;
-  padding-left: 30px;
-}
-
-ul {
-  list-style-type: disc;
-}
-
-ol {
-  list-style-type: decimal;
-}
-
-ol ul, ul ol, ul ul, ol ol {
-  margin: 0;
-}
-
-ul ul, ol ul {
-  list-style-type: circle;
-}
-
-em, i {
-  font-style: italic;
-}
-
-strong, b {
-  font-weight: bold;
-}
-
-img {
-  max-width: 100%;
-}
-
 /*********************/
 /* LAYOUT / SECTIONS */
 /*********************/
-
-.wrapper-masthead {
-  margin-bottom: 0px;
-}
 
 .masthead {
   padding-top: 20px;
@@ -144,7 +60,7 @@ img {
 
 .site-name {
   text-align: center;
-  margin: 0 0 0px;    
+  margin: 5px 0 5px;    
   cursor: pointer;
   color: $night;
   font-family: $title;
@@ -154,56 +70,44 @@ img {
 
 .site-description {
   text-align: center;
-  margin: 0 0 0px;        
+  margin: 0 0 5px;        
   color: $gray;
   font-family: $title;
   font-weight: 300;
-  font-size: 24px;        
+  font-size: 22px;        
 }
+
+// NAVIGATION BAR
 
 nav {
   display: flex;
-  justify-content: center;
-  gap: 2rem;
-  padding: 1rem 0;
-  background: transparent;      // no pill background
-  box-shadow: none;
-  
-  a {
-    position: relative;
-    font-family: $normalFont;
-    font-size: 1rem;
-    font-weight: 500;
-    color: $ultraViolet;
-    text-decoration: none;
-    padding: 0.5rem 0;
+  justify-content: space-between; /* Distributes items with equal space between */
+  max-width: 900px;               /* Or any width you prefer */
+  margin: 0 auto;                 /* Center the nav block horizontally */
+  padding: 25px 25px;
+}
 
-    // sliding underline
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      width: 0;
-      height: 2px;
-      background: $columbiaBlue;
-      transition: width 0.3s ease, left 0.3s ease;
-    }
+nav a {
+  font-family: $normalFont;
+  font-size: 20px;
+  letter-spacing: 1.2px;
+  color: $ultraViolet;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
 
-    &:hover,
-    &.active {
-      color: $columbiaBlue;
-
-      &::after {
-        width: 100%;
-        left: 0;
-      }
-    }
+  &:hover,
+  &.active {
+    color: $columbiaBlue;
+    border-bottom: 2px solid $columbiaBlue;
   }
 }
 
 
-// BUTTON for projects time
+
+
+
+
+// BUTTON for projects 
 
 .button {
   display: flex;
@@ -261,22 +165,13 @@ nav {
 .contact-section {
   max-width: 50%;
   background-color: #f2f2f2;
-  padding: 10px;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 8px;
+  border-radius: 2px 12.5px;
   text-align: center;
-}
-
-.contact-section h2 {
-  color: #333;
-  font-size: 18px;
-}
-
-.contact-section p {
-  color: #555;
-  font-size: 16px;
-  line-height: 1.25;
+  border-width: 1px 2px;
+  border-color: darkgray;
+  border-style: solid;
 }
 
 @import "highlights";

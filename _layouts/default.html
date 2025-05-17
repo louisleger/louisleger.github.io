@@ -12,25 +12,20 @@
   </head>
 
   <body>
-    <div class="wrapper-masthead">
-      
-      <div class="container">
+      <header class="masthead clearfix">
         
-        <header class="masthead clearfix">
-          
 
-          <h1 class="site-name">{{ site.name }}</h1>
-          <p class="site-description">{{ site.description }}</p>
+        <h1 class="site-name">{{ site.name }}</h1>
+        <p class="site-description">{{ site.description }}</p>
 
-          <nav>
-            <a href="{{ site.baseurl }}/">Home</a>
-            <a href="{{ site.baseurl }}/projects">Projects</a>
-            <a href="{{ site.baseurl }}/publications">Publications</a>
-            <a href="{{ site.baseurl }}/thoughts">Thoughts</a>
-          </nav>
-        </header>
-      </div>
-    </div>
+        <nav>
+          <a href="{{ site.baseurl }}/">Home</a>
+
+          <a href="{{ site.baseurl }}/projects">Projects</a>
+          <a href="{{ site.baseurl }}/publications">Publications</a>
+          <a href="{{ site.baseurl }}/thoughts">Thoughts</a>
+        </nav>
+      </header>
 
     <div id="main" role="main" class="container">
       {{ content }}
