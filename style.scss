@@ -112,13 +112,13 @@ nav a {
 .button {
   display: flex;
   align-items: center;
-  padding: 20px;
-  border: 1px solid transparent;
+  padding: 8px;
+  border-top: 1.2px solid;
+  border-bottom: 1.2px solid;
   text-decoration: none;
-  border-radius: 10px;
   border-color: $night;
   color: black;
-  margin-bottom: 10px; /* Spacing between buttons */
+  margin-bottom: 15px; /* Spacing between buttons */
   background-color: $white2;
   transition: border 0.3s ease;
 }
@@ -128,8 +128,8 @@ nav a {
 }
 
 .button img {
-  width: 100px;
-  height: 100px;
+  width: 125px;
+  height: 125px;
   margin-right: 15px;
 }
 
@@ -141,18 +141,19 @@ nav a {
 .button .title {
   font-family: $title;
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1.3em;
 }
 
 .button .description {
   text-align: justify;
   font-family: $subtitle;
-  font-size: 0.9em;
+  font-size: 15px;
+  margin-right: 30px;
 }
 
 .button .info {
   margin-left: auto;
-  text-align: right;
+  text-align: left;
 }
 
 .button .info .context {
