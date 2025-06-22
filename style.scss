@@ -44,6 +44,12 @@ p {
   }
 }
 
+.avatar-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
 .site-avatar {
   display: block;
   text-align: center;
